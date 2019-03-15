@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <h1>哭哭ㄅ做不出來(〒︿〒)</h1>
+
+        <div class="content">
+            <input type="text" name="name" id="search" placeholder="search">
+            <div id="inviteList" class="addFriend">
+               
+            </div>
+            <button id="sent">Sent Invitation</button>
+            
+            <div id="tags"></div>
+
+            <form id="search-form"></form>
+                <input type="text" name="name" id="article-search" placeholder="article-search">
+                <button id="searchSubmit">submit</button>
+                <input type="text" id="tag_search"  name="tag_search" placeholder="tag_search">
+            </form>
+            <form id="add-form">
+                
+                <input type="text" id="article_id" name="article_id" placeholder="article_id">
+                <input type="text" id="article_title"  name="article_title" placeholder="article_title">
+                <input type="text" id="article"  name="article" placeholder="article">
+                <input type="text" id="content"  name="content" placeholder="content">
+                <input type="text" id="article_tag"  name="article_tag" placeholder="always Beauty">
+                <button id="submitYa">submit</button>
+            </form>
+            <ul id="list"></ul>
+ 
+
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+        <script>
+            // // Initialize Firebase
+            // var config = {
+            //     apiKey: "AIzaSyBTYgsJ6zlA_F7MLqo93pCG-BCKjdUSXL8",
+            //     authDomain: "test-f0398.firebaseapp.com",
+            //     databaseURL: "https://test-f0398.firebaseio.com",
+            //     projectId: "test-f0398",
+            //     storageBucket: "test-f0398.appspot.com",
+            //     messagingSenderId: "1052724752382"
+            // };
+
+            // Initialize Firebase
+                var config = {
+                    apiKey: "AIzaSyCHQYdCs7PqTzXPIleqykf0FQGImKVZS-E",
+                    authDomain: "fir-8df3c.firebaseapp.com",
+                    databaseURL: "https://fir-8df3c.firebaseio.com",
+                    projectId: "fir-8df3c",
+                    storageBucket: "fir-8df3c.appspot.com",
+                    messagingSenderId: "904551560469"
+                };
+                firebase.initializeApp(config);
+            const db = firebase.firestore();
+            db.settings({ timestampsInSnapshots: true }); 
+        </script>
+        <script src="app.js"></script>
+    </body>
+</html>
